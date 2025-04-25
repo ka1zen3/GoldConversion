@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    background-image: url('wowGold.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative; /* Ensures absolute positioning inside works */
+    font-family: 'Inter', sans-serif;
+
+}
+
+h2 {
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    position: fixed; 
+    top: 7%; 
+    width: 100%; 
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+   
+}
+
+
+form {
+    position: fixed;
+    border: 5px solid #D4AF37;
+    top: 28%; /* Keeps the form from touching the top border */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the form horizontally */
+    
+    background: #FFFDD0;
+    padding: 25px; /* Increased padding for better spacing */
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+    min-height: 200px; 
+
+    width: 400px;
+    max-width: 90%; 
+    
+    
+   
+}
+
+
+select, input {
+    text-align: center;
+    margin: 10px;
+    padding: 8px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight:500;
+    border-radius: 25px; /* Makes the button rounded */
+    border: 2px solid #D4AF37;
+    width: 300px;
+
+}
+
+label {
+    
+
+    margin: 10px;
+    padding: 8px;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight:600;
+    border-radius: 25px; 
+    border: 2px solid #FFFDD0;
+
+
+}
+
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    border-radius: 25px; 
+    background-color: black; 
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: 500;
+    width: 300px;
+}
+
+button:hover {
+    background-color: #D4AF37; 
+}
+
+.result {
+    position: relative; /* Ensure it stays in the normal document flow */
+    margin-top: 20px; /* Pushes it down so it appears below the fixed form */
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    
+
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+
+    width: 150px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
